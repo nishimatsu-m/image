@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>プラグイン設定</title>
+    <link
+      rel="stylesheet"
+      href="https://js.cybozu.com/k/v2.0/modern/uikit/css/uikit.min.css"
+    />
+    <style>
+      .kintoneplugin-title {
+        font-weight: bold;
+      }
+      .kintoneplugin-row {
+        margin-bottom: 20px;
+      }
+      #alert_message {
+        width: 100%; /* テキストボックスを横に長くする */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kintoneplugin">
+      <div class="kintoneplugin-title">メッセージの設定</div>
+      <div class="kintoneplugin-row">
+        <label for="alert_message">アラートメッセージ:</label>
+        <input
+          type="text"
+          id="alert_message"
+          class="kintoneplugin-input-text"
+          placeholder="メッセージを入力してください"
+        />
+      </div>
+      <div class="kintoneplugin-button-container">
+        <button class="kintoneplugin-button-dialog-ok" id="submit">
+          保存する
+        </button>
+        <button class="kintoneplugin-button-dialog-cancel" id="cancel">
+          キャンセル
+        </button>
+      </div>
+    </div>
+
+    <script src="https://js.cybozu.com/k/v2.0/modern/uikit/js/uikit.min.js"></script>
+    <script src="./config.js"></script>
+  </body>
+</html>
